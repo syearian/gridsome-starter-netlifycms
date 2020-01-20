@@ -11,7 +11,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "content/home.yml"
+        file: "../content/home.yml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Image", name: "hero_image", widget: "image"}
@@ -19,7 +19,7 @@ collections:
           - {label: "Body Content", name: "body", widget: "markdown"}
       - label: "About"
         name: "about"
-        file: "content/about.yml"
+        file: "../content/about.yml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Image", name: "hero_image", widget: "image"}
@@ -27,7 +27,7 @@ collections:
           - {label: "Body Content", name: "body", widget: "markdown"}
       - label: "Services"
         name: "services"
-        file: "content/services.yml"
+        file: "../content/services.yml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Image", name: "hero_image", widget: "image"}
@@ -35,7 +35,7 @@ collections:
           - {label: "Body Content", name: "body", widget: "markdown"}
       - label: "Contact"
         name: "contact"
-        file: "content/contact.yml"
+        file: "../content/contact.yml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Image", name: "hero_image", widget: "image"}
