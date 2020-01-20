@@ -1,18 +1,43 @@
 backend:
-  name: github
+  name: git-gateway
   repo: your_name/repo_name
 
 media_folder: "static/media"
 public_folder: "/media"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Image Alt Text", name: "hero_alt", widget: "string"}
+          - {label: "Body Content", name: "body", widget: "markdown"}
+      - label: "About"
+        name: "about"
+        file: "content/about.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Image Alt Text", name: "hero_alt", widget: "string"}
+          - {label: "Body Content", name: "body", widget: "markdown"}
+      - label: "Services"
+        name: "services"
+        file: "content/services.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Image Alt Text", name: "hero_alt", widget: "string"}
+          - {label: "Body Content", name: "body", widget: "markdown"}
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Image Alt Text", name: "hero_alt", widget: "string"}
+          - {label: "Body Content", name: "body", widget: "markdown"}
