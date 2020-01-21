@@ -19,7 +19,14 @@
 </template>
 
 <script>
+import pageData from '~/content/home.yml'
 export default {
+  computed: {
+    data () {
+      return pageData
+    }
+  },
+
   metaInfo: {
     title: 'Hello, world!'
   }
