@@ -1,6 +1,9 @@
 {
   "name": "gridsome-starter-netlifycms",
   "private": true,
+  "version": "0.1",
+  "license": "MIT",
+  "author": {"name": "Steven Yearian"},
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
